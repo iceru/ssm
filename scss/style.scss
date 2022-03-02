@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700;900&family=Roboto:wght@400;500;700&display=swap');
+@import 'variables';
+@import 'components';
+@import 'global';
+@import 'index';
+@import 'siswa';
+
+html, body {
+    font-family: 'Lato';
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    
+    &:hover {
+        text-decoration: none;
+    }
+}
