@@ -723,6 +723,78 @@
   display: inline;
 }
 
+.login .content {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login .content .item-wrapper {
+  background-color: white;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 4rem 2rem;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login .content .logo {
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.login .content .logo .top {
+  font-size: 2rem;
+}
+
+.login .content .logo .middle {
+  font-size: 2.5rem;
+}
+
+.login .content .logo .bottom img {
+  width: 100%;
+}
+
+.login .content form {
+  width: 80%;
+}
+
+.login .content form .form-label {
+  font-size: 1.5rem;
+}
+
+.login .content .btn-login {
+  width: 100%;
+  text-align: center;
+  background-color: #749A57;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 html, body {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
