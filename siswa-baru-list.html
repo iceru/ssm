@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salafiyah Smart System</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="siswa-baru-list">
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="top">
+                        Salafiyah
+                    </div>
+                    <div class="middle">
+                        Smart System
+                    </div>
+                    <div class="bottom">
+                        <img src="/images/logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-body">
+                <ul>
+                    <a href="/">
+                        <li>
+                            <img src="/images/icon-home.png" alt="">
+                            Home
+                        </li>
+                    </a>
+                    <a data-bs-toggle="collapse" class="collapse-menu" href="#collapseExample" role="button"
+                        aria-expanded="true" aria-controls="collapseExample">
+                        <li>
+                            <div class="d-flex">
+                                <img src="/images/icon-student.png" alt="">
+                                Data Siswa
+                            </div>
+                            <div class="icon-collapse">
+                                <img src="/images/chevron-down.svg" alt="">
+                            </div>
+                        </li>
+                    </a>
+                    <div class="collapse submenu show" id="collapseExample">
+                        <ul>
+                            <a href="">
+                                <li class="active">Siswa Baru</li>
+                            </a>
+                            <a href="">
+                                <li>Hasil Ujian PPSB</li>
+                            </a>
+                            <a href="">
+                                <li>Penempatan Kelas</li>
+                            </a>
+                            <a href="">
+                                <li>Buku Induk</li>
+                            </a>
+                            <a href="">
+                                <li>Tahun Ajaran Aktif</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <a href="">
+                        <li>
+                            <img src="/images/icon-school.png" alt="">
+                            Pendidikan
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            <img src="/images/icon-money.png" alt="">
+                            Keuangan
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            <img src="/images/icon-sdm.png" alt="">
+                            SDM
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            <img src="/images/icon-nurse.png" alt="">
+                            Pengasuhan
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            <img src="/images/icon-files.png" alt="">
+                            Master
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            <img src="/images/icon-tools.png" alt="">
+                            BRT
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            <img src="/images/icon-clipboard.png" alt="">
+                            Absen Kegiatan
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            <img src="/images/icon-rapor.png" alt="">
+                            Rapor
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            <img src="/images/icon-news.png" alt="">
+                            News
+                        </li>
+                    </a>
+                    <a href="">
+
+                        <li>
+                            <img src="/images/icon-exams.png" alt="">
+                            Ujian Online
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            <img src="/images/icon-classroom.png" alt="">
+                            Google Classroom
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            <img src="/images/icon-task.png" alt="">
+                            Tugas Harian/Mingguan
+                        </li>
+                    </a>
+
+                </ul>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header justify-content-end">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="sidebar-header">
+                    <div class="logo">
+                        <div class="top">
+                            Salafiyah
+                        </div>
+                        <div class="middle">
+                            Smart System
+                        </div>
+                        <div class="bottom">
+                            <img src="/images/logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-body">
+                    <ul>
+                        <a href="/">
+                            <li class="active">
+                                <img src="/images/icon-home.png" alt="">
+                                Home
+                            </li>
+                        </a>
+                        <a data-bs-toggle="collapse" class="collapse-menu" href="#collapseExample" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            <li>
+                                <div class="d-flex">
+                                    <img src="/images/icon-student.png" alt="">
+                                    Data Siswa
+                                </div>
+                                <div class="icon-collapse">
+                                    <img src="/images/chevron-down.svg" alt="">
+                                </div>
+                            </li>
+                        </a>
+                        <div class="collapse submenu" id="collapseExample">
+                            <ul>
+                                <a href="/siswa-baru.html">
+                                    <li>Siswa Baru</li>
+                                </a>
+                                <a href="">
+                                    <li>Hasil Ujian PPSB</li>
+                                </a>
+                                <a href="">
+                                    <li>Penempatan Kelas</li>
+                                </a>
+                                <a href="">
+                                    <li>Buku Induk</li>
+                                </a>
+                                <a href="">
+                                    <li>Tahun Ajaran Aktif</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <a href="">
+                            <li>
+                                <img src="/images/icon-school.png" alt="">
+                                Pendidikan
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <img src="/images/icon-money.png" alt="">
+                                Keuangan
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <img src="/images/icon-sdm.png" alt="">
+                                SDM
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <img src="/images/icon-nurse.png" alt="">
+                                Pengasuhan
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <img src="/images/icon-files.png" alt="">
+                                Master
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <img src="/images/icon-tools.png" alt="">
+                                BRT
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <img src="/images/icon-clipboard.png" alt="">
+                                Absen Kegiatan
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <img src="/images/icon-rapor.png" alt="">
+                                Rapor
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <img src="/images/icon-news.png" alt="">
+                                News
+                            </li>
+                        </a>
+                        <a href="">
+    
+                            <li>
+                                <img src="/images/icon-exams.png" alt="">
+                                Ujian Online
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <img src="/images/icon-classroom.png" alt="">
+                                Google Classroom
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <img src="/images/icon-task.png" alt="">
+                                Tugas Harian/Mingguan
+                            </li>
+                        </a>
+    
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="navigation">
+                <div class="header">
+                    <div class="mobile-sidebar">
+                        <a class="btn btn-green" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                            <img src="/images/icon-hamburger.png" alt="">
+                          </a>
+                    </div>
+                    <div class="search-bar">
+                        <input class="form-control" type="text" placeholder="Search..">
+                        <div class="icon">
+                            <img src="/images/icon-search.png" alt="Search">
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="user dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="/images/user.png" alt="">
+                            <div class="name">
+                                John Anderson
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="breadcrumb">
+                    <span><a href="/">Dashboard</a> &nbsp;/</span>
+                    <span class="current">&nbsp;<a href="#">Data Siswa</a>&nbsp;/</span>
+                    <span class="current">&nbsp;<a href="#">Siswa Baru</a>&nbsp;/</span>
+                    <span class="current">&nbsp;<a href="#">List</a></span>
+                </div>
+            </div>
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="statistik-tab" data-bs-toggle="tab" data-bs-target="#statistik"
+                        type="button" role="tab" aria-controls="hostatistikme" aria-selected="true">Statistik Pendaftaran</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="list-tab" data-bs-toggle="tab" data-bs-target="#list"
+                        type="button" role="tab" aria-controls="list" aria-selected="false">List</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pembayaran-tab" data-bs-toggle="tab" data-bs-target="#pembayaran"
+                        type="button" role="tab" aria-controls="pembayaran" aria-selected="false">Pembayaran Registrasi</button>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Rekap</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item" role="presentation">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Setup</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                      </li>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade" id="statistik" role="tabpanel" aria-labelledby="statistik-tab">
+                    <div class="tabs-title">
+                        Statistik Pendaftaran
+                    </div>
+                </div>
+                <div class="tab-pane fade show active" id="list" role="tabpanel" aria-labelledby="list-tab">
+                    <div class="tabs-title">
+                        LIST SISWA BARU
+                    </div>
+
+                    <div class="list-options">
+                        <select class="form-select" name="" id="">
+                            <option>2020/2021</option>
+                            <option>2019/2020</option>
+                            <option>2018/2019</option>
+                        </select>
+                        <div class="search">
+                            <input type="text" class="form-control" placeholder="Search.." name="search-list" id="search-list">
+                            <div class="icon">
+                                <img src="/images/icon-search.png" alt="Search">
+                            </div>
+                        </div>
+                        <button class="btn btn-blue-grey">
+                            + Tambah Siswa
+                        </button>
+                        <button class="btn btn-blue-grey">
+                            Show
+                        </button>
+                        <button type="button" class="btn btn-success">
+                            <img src="/images/icon-excel.png" alt="Excel"> Excel
+                        </button>
+                        <button type="button" class="btn btn-danger">
+                            <img src="/images/icon-pdf.png" alt="PDF"> PDF
+                        </button>
+                    </div>
+                    <div class="table-wrapper">
+                        <div class="table-options">
+                            <div class="show-table">
+                                Show<input type="number" class="form-control" name="show" id="show" value="10">entries
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th> </th>
+                                        <th>No. Registrasi</th>
+                                        <th>Nama</th>
+                                        <th>Nomor VA</th>
+                                        <th>Tagihan</th>
+                                        <th>Lembaga</th>
+                                        <th>Tingkatan</th>
+                                        <th>Jenis Kelamin</th>
+                                        <th>Tahap Registrasi</th>
+                                        <th>Registrasi Ulang / Konfirmasi</th>
+                                        <th>
+                                            <img src="/images/icon-hamburger.png" alt="">
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="settings">
+                                            <div class="dropend">
+                                                <a href="#" role="button" id="dropdownMenuLink"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="/images/icon-setting.svg" alt="">
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                    <li><a class="dropdown-item" href="#"><img src="/images/dropdown/icon-edit.png" alt=""> Edit</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a class="dropdown-item" href="#"><img src="/images/dropdown/icon-payment.png" alt=""> Bayar Tunai</a></li>
+                                                    <li><a class="dropdown-item" href="#"><img src="/images/dropdown/icon-detail.png" alt=""> Detail Tagihan</a></li>
+                                                    <li><a class="dropdown-item" href="#"><img src="/images/dropdown/icon-create.png" alt="">Create Biaya Pendaftaran</a></li>
+                                                    <li><a class="dropdown-item" href="#"><img src="/images/dropdown/icon-print.png" alt=""> Print Biaya Pendaftaran</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a class="dropdown-item" href="#"><img src="/images/dropdown/icon-move.png" alt="">Ubah Tahapan Pendaftaran</a></li>
+                                                    <li><a class="dropdown-item" href="#"><img src="/images/dropdown/icon-file.png" alt="">Berkas</a></li>
+                                                    <li><a class="dropdown-item" href="#"><img src="/images/dropdown/icon-notes.png" alt="">Catatan PSB</a></li>
+                                                    <li><a class="dropdown-item" href="#"><img src="/images/dropdown/icon-print.png" alt="">Print Kartu Ujian</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a class="dropdown-item" href="#"><img src="/images/dropdown/icon-lock.png" alt="">Reset Password</a></li>
+                                                    <li><a class="dropdown-item" href="#"><img src="/images/dropdown/icon-user.png" alt="">Reset Username</a></li>
+                                                    <li><a class="dropdown-item" href="#"><img src="/images/dropdown/icon-school.png" alt="">Pindah Sekolah</a></li>
+                                                    <li><a class="dropdown-item" href="#"><img src="/images/dropdown/icon-delete.png" alt="">Hapus</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td>0025321452</td>
+                                        <td>CUT AMEERA RAYHANI</td>
+                                        <td>8366-0025-0001-3214</td>
+                                        <td>
+                                            <div class="tagihan secondary">
+                                                450.000
+                                            </div>
+                                        </td>
+                                        <td>MTs</td>
+                                        <td>1-TMI</td>
+                                        <td>P</td>
+                                        <td>Bayar Pendaftaran</td>
+                                        <td>
+                                            <div class="registrasi">
+                                                Tidak
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination-wrapper">
+                            <div></div>
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination justify-content-center pagination-number">
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                </ul>
+                            </nav>
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span>Previous</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span>Next</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+        
+                    <div class="row charts">
+                        <div class="col-12 col-lg-8">
+                            <div class="table-wrapper">
+                                <div class="table-header">
+                                    Status Kelulusan
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <canvas id="kelulusan" style="position: relative; height:50vh; width:80vw"></canvas>
+                                        <script>
+                                            const ctx = document.getElementById('kelulusan').getContext('2d');
+                                            const myChart = new Chart(ctx, {
+                                                type: 'line',
+                                                data: {
+                                                    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September'],
+                                                    datasets: [
+                                                        {
+                                                            label: 'Jumlah Siswa Lulus Kurang Dari 3 Tahun ',
+                                                            data: [15, 32, 36, 30, 21, 15, 10, 9, 10],
+                                                            bezierCurve: true,
+                                                            borderColor: '#EB008A',
+                                                            lineTension: 0.3,
+                                                            pointBorderWidth: 8
+                                                        },
+                                                        {
+                                                            label: 'Jumlah Siswa Lulus Tepat Waktu',
+                                                            data: [4, 11, 17, 24, 28, 30, 31, 33, 40],
+                                                            bezierCurve: true,
+                                                            borderColor: '#0094D8',
+                                                            lineTension: 0.3,
+                                                            pointBorderWidth: 8,
+                                                        },
+                                                    ]
+                                                },
+                                                options: {
+                                                    scales: {
+                                                        y: {
+                                                            beginAtZero: true,
+                                                            ticks: {
+                                                                stepSize: 10
+                                                            }
+                                                        }
+                                                    },
+                                                }
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-wrapper">
+                                <div class="table-header">
+                                    Rekap Pembayaran Formulir Per Lembaga
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead class="bordered">
+                                            <tr class="up">
+                                                <th rowspan="2">LEMBAGA</th>
+                                                <th colspan="3">PUTRA</th>
+                                                <th colspan="3">PUTRI</th>
+                                                <th colspan="2">PUTRA/PUTRI</th>
+                                                <th rowspan="2">TOTAL</th>
+                                            </tr>
+                                            <tr class="below">
+                                                <th>Bayar</th>
+                                                <th>Tidak</th>
+                                                <th>Jumlah</th>
+                                                <th>Bayar</th>
+                                                <th>Tidak</th>
+                                                <th>Jumlah</th>
+                                                <th>Bayar</th>
+                                                <th>Tidak</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>MTs</td>
+                                                <td>99</td>
+                                                <td>54</td>
+                                                <td>153</td>
+                                                <td>99</td>
+                                                <td>54</td>
+                                                <td>153</td>
+                                                <td>99</td>
+                                                <td>54</td>
+                                                <td>306</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Aliyah</td>
+                                                <td>23</td>
+                                                <td>41</td>
+                                                <td>64</td>
+                                                <td>23</td>
+                                                <td>41</td>
+                                                <td>64</td>
+                                                <td>23</td>
+                                                <td>61</td>
+                                                <td>128</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jumlah Pendaftar</td>
+                                                <td>122</td>
+                                                <td>95</td>
+                                                <td>227</td>
+                                                <td>122</td>
+                                                <td>95</td>
+                                                <td>227</td>
+                                                <td>122</td>
+                                                <td>95</td>
+                                                <td>434</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+        
+                                </div>
+                            </div>
+                            <div class="table-wrapper">
+                                <div class="table-header">
+                                    Persentase Sebaran Kabupaten - Kota
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead class="bordered">
+                                            <tr class="up">
+                                                <th>No.</th>
+                                                <th>Kabupaten / Kota</th>
+                                                <th>Jumlah</th>
+                                                <th>Persentase</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td class="text-uppercase">Jakarta Timur</td>
+                                                <td>22</td>
+                                                <td>0%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td class="text-uppercase">Jakarta Selatan</td>
+                                                <td>52</td>
+                                                <td>0%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td class="text-uppercase">Kota Bogor</td>
+                                                <td>120</td>
+                                                <td>0%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td class="text-uppercase">Kota Bandung</td>
+                                                <td>146</td>
+                                                <td>0%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td class="text-uppercase">Kabupaten Majalengka</td>
+                                                <td>291</td>
+                                                <td>0%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+        
+                                </div>
+                                <div class="pagination-wrapper">
+                                    <div></div>
+                                    <nav aria-label="Page navigation">
+                                        <ul class="pagination justify-content-center pagination-number">
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                        </ul>
+                                    </nav>
+                                    <nav aria-label="Page navigation">
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <span>Previous</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span>Next</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="table-wrapper">
+                                <div class="table-header">
+                                    Rekap Pembayaran Formulir Berdasarkan Lembaga
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <canvas id="lembaga" width="300" height="150"></canvas>
+                                        <script>
+                                            const ctxLembaga = document.getElementById('lembaga').getContext('2d');
+                                            const chartLembaga = new Chart(ctxLembaga, {
+                                                type: 'doughnut',
+                                                data: {
+                                                    labels: ['Lembaga A', 'Lembaga B'],
+                                                    datasets: [
+                                                        {
+                                                            data: [70, 30],
+                                                            backgroundColor: ['#16556F', '#75BBC8'],
+                                                            rotation: 250
+                                                        },
+                                                    ]
+                                                },
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-wrapper">
+                                <div class="table-header">
+                                    Tahapan Proses
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <canvas id="Proses" width="300" height="150"></canvas>
+                                        <script>
+                                            const ctxProses = document.getElementById('Proses').getContext('2d');
+                                            const chartProses = new Chart(ctxProses, {
+                                                type: 'doughnut',
+                                                data: {
+                                                    labels: ['Proses A', 'Proses B'],
+                                                    datasets: [
+                                                        {
+                                                            data: [70, 30],
+                                                            backgroundColor: ['#DE0685', '#FD8FCF'],
+                                                            rotation: 250
+                                                        },
+                                                    ]
+                                                },
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pembayaran" role="tabpanel" aria-labelledby="pembayaran-tab">
+                    <div class="tabs-title">
+                        Pembayaran Registrasi
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</body>
+
+<script>
+    $('.table-responsive').on('show.bs.dropdown', function () {
+        $('.table-responsive').css("overflow", "inherit");
+    });
+
+    $('.table-responsive').on('hide.bs.dropdown', function () {
+        $('.table-responsive').css("overflow", "auto");
+    })
+</script>
+
+</html>

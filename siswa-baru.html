@@ -36,8 +36,8 @@
             </div>
             <div class="sidebar-body">
                 <ul>
-                    <a href="">
-                        <li class="active">
+                    <a href="/">
+                        <li>
                             <img src="/images/icon-home.png" alt="">
                             Home
                         </li>
@@ -150,9 +150,149 @@
                 </ul>
             </div>
         </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header justify-content-end">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="sidebar-header">
+                    <div class="logo">
+                        <div class="top">
+                            Salafiyah
+                        </div>
+                        <div class="middle">
+                            Smart System
+                        </div>
+                        <div class="bottom">
+                            <img src="/images/logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-body">
+                    <ul>
+                        <a href="/">
+                            <li class="active">
+                                <img src="/images/icon-home.png" alt="">
+                                Home
+                            </li>
+                        </a>
+                        <a data-bs-toggle="collapse" class="collapse-menu" href="#collapseExample" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            <li>
+                                <div class="d-flex">
+                                    <img src="/images/icon-student.png" alt="">
+                                    Data Siswa
+                                </div>
+                                <div class="icon-collapse">
+                                    <img src="/images/chevron-down.svg" alt="">
+                                </div>
+                            </li>
+                        </a>
+                        <div class="collapse submenu" id="collapseExample">
+                            <ul>
+                                <a href="/siswa-baru.html">
+                                    <li>Siswa Baru</li>
+                                </a>
+                                <a href="">
+                                    <li>Hasil Ujian PPSB</li>
+                                </a>
+                                <a href="">
+                                    <li>Penempatan Kelas</li>
+                                </a>
+                                <a href="">
+                                    <li>Buku Induk</li>
+                                </a>
+                                <a href="">
+                                    <li>Tahun Ajaran Aktif</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <a href="">
+                            <li>
+                                <img src="/images/icon-school.png" alt="">
+                                Pendidikan
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <img src="/images/icon-money.png" alt="">
+                                Keuangan
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <img src="/images/icon-sdm.png" alt="">
+                                SDM
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <img src="/images/icon-nurse.png" alt="">
+                                Pengasuhan
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <img src="/images/icon-files.png" alt="">
+                                Master
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <img src="/images/icon-tools.png" alt="">
+                                BRT
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <img src="/images/icon-clipboard.png" alt="">
+                                Absen Kegiatan
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <img src="/images/icon-rapor.png" alt="">
+                                Rapor
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <img src="/images/icon-news.png" alt="">
+                                News
+                            </li>
+                        </a>
+                        <a href="">
+    
+                            <li>
+                                <img src="/images/icon-exams.png" alt="">
+                                Ujian Online
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <img src="/images/icon-classroom.png" alt="">
+                                Google Classroom
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <img src="/images/icon-task.png" alt="">
+                                Tugas Harian/Mingguan
+                            </li>
+                        </a>
+    
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="content">
             <div class="navigation">
                 <div class="header">
+                    <div class="mobile-sidebar">
+                        <a class="btn btn-green" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                            <img src="/images/icon-hamburger.png" alt="">
+                          </a>
+                    </div>
                     <div class="search-bar">
                         <input class="form-control" type="text" placeholder="Search..">
                         <div class="icon">
@@ -178,11 +318,11 @@
                 <div class="breadcrumb">
                     <span><a href="/">Dashboard</a> &nbsp;/</span>
                     <span class="current">&nbsp;<a href="#">Data Siswa</a>&nbsp;/</span>
-                    <span class="current">&nbsp;<a href="#">Siswa Baru</a></span>
+                    <span class="current">&nbsp;<a href="/siswa-baru.html">Siswa Baru</a></span>
                 </div>
             </div>
 
-            <div class="content-item">
+            <div class="content-item mb-5">
                 <div class="item-header">
                     Edit Profil Siswa
                 </div>
@@ -451,7 +591,7 @@
                     </div>
                 </div>
                 <div class="row align-items-center">
-                    <div class="col-4 offset-6">
+                    <div class="col-6 col-lg-4 offset-lg-6">
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
                             <label class="form-check-label" for="">
@@ -459,7 +599,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="col-2 d-flex justify-content-end">
+                    <div class="col-6 col-lg-2 d-flex justify-content-end">
                         <button type="submit" class="btn btn-primary">Update</button>
                     </div>
                 </div>
@@ -473,7 +613,7 @@
                     Identitas
                 </div>
                 <div class="row">
-                    <div class="col-12 col-lg-3">
+                    <div class="col-12 col-lg-3 mb-3 mb-lg-0">
                         <div class="row">
                             <div class="col-6 col-lg-12">
                                 <div class="card secondary">
@@ -495,6 +635,12 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <button type="button" class="btn btn-blue-grey">
+                                    <img src="/images/icon-print.png" alt="">
+                                    Print Biodata
+                                </button>    
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-9">
@@ -508,32 +654,34 @@
                                         <div class="col-12 col-lg-6">
                                             <div class="mb-3">
                                                 <div class="row align-items-center">
-                                                    <div class="col-3 text-end">
-                                                        <label for="nik" class="form-label">NIK KTP <span class="required">*</span></label>
+                                                    <div class="col-4 text-end">
+                                                        <label for="nik" class="form-label">NIK KTP <span
+                                                                class="required">*</span></label>
                                                     </div>
-                                                    <div class="col-9">
-                                                        <input type="text" class="form-control" name="nik"
-                                                            id="nik" placeholder="">
+                                                    <div class="col-8">
+                                                        <input type="text" class="form-control" name="nik" id="nik"
+                                                            placeholder="">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="mb-3">
                                                 <div class="row align-items-center">
-                                                    <div class="col-3 text-end">
+                                                    <div class="col-4 text-end">
                                                         <label for="name" class="form-label">Nama Arab</label>
                                                     </div>
-                                                    <div class="col-9">
-                                                        <input type="text" class="form-control" name="name"
-                                                            id="name" placeholder="">
+                                                    <div class="col-8">
+                                                        <input type="text" class="form-control" name="name" id="name"
+                                                            placeholder="">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="mb-3">
                                                 <div class="row align-items-center">
-                                                    <div class="col-3 text-end">
-                                                        <label for="nama-ijazah" class="form-label">Nama Sesuai Ijazah</label>
+                                                    <div class="col-4 text-end">
+                                                        <label for="nama-ijazah" class="form-label">Nama Sesuai
+                                                            Ijazah</label>
                                                     </div>
-                                                    <div class="col-9">
+                                                    <div class="col-8">
                                                         <input type="text" class="form-control" name="nama-ijazah"
                                                             id="nama-ijazah" placeholder="">
                                                     </div>
@@ -541,21 +689,23 @@
                                             </div>
                                             <div class="mb-3">
                                                 <div class="row align-items-center">
-                                                    <div class="col-3 text-end">
-                                                        <label for="gelar" class="form-label">Gelar Akademik <span class="required">*</span></label>
+                                                    <div class="col-4 text-end">
+                                                        <label for="gelar" class="form-label">Gelar Akademik <span
+                                                                class="required">*</span></label>
                                                     </div>
-                                                    <div class="col-9">
-                                                        <input type="text" class="form-control" name="gelar"
-                                                            id="gelar" placeholder="">
+                                                    <div class="col-8">
+                                                        <input type="text" class="form-control" name="gelar" id="gelar"
+                                                            placeholder="">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="mb-3">
                                                 <div class="row align-items-center">
-                                                    <div class="col-3 text-end">
-                                                        <label for="name-ktp" class="form-label">Nama Sesuai KTP <span class="required">*</span></label>
+                                                    <div class="col-4 text-end">
+                                                        <label for="name-ktp" class="form-label">Nama Sesuai KTP <span
+                                                                class="required">*</span></label>
                                                     </div>
-                                                    <div class="col-9">
+                                                    <div class="col-8">
                                                         <input type="text" class="form-control" name="name-ktp"
                                                             id="name-ktp" placeholder="">
                                                     </div>
@@ -563,10 +713,11 @@
                                             </div>
                                             <div class="mb-3">
                                                 <div class="row align-items-center">
-                                                    <div class="col-3 text-end">
-                                                        <label for="birthplace" class="form-label">Tempat Lahir <span class="required">*</span></label>
+                                                    <div class="col-4 text-end">
+                                                        <label for="birthplace" class="form-label">Tempat Lahir <span
+                                                                class="required">*</span></label>
                                                     </div>
-                                                    <div class="col-9">
+                                                    <div class="col-8">
                                                         <input type="text" class="form-control" name="birthplace"
                                                             id="birthplace" placeholder="">
                                                     </div>
@@ -574,10 +725,11 @@
                                             </div>
                                             <div class="mb-3">
                                                 <div class="row align-items-center">
-                                                    <div class="col-3 text-end">
-                                                        <label for="birthdate" class="form-label">Tanggal Lahir <span class="required">*</span></label>
+                                                    <div class="col-4 text-end">
+                                                        <label for="birthdate" class="form-label">Tanggal Lahir <span
+                                                                class="required">*</span></label>
                                                     </div>
-                                                    <div class="col-9">
+                                                    <div class="col-8">
                                                         <input type="text" class="form-control" name="birthdate"
                                                             id="birthdate" placeholder="">
                                                     </div>
@@ -585,10 +737,11 @@
                                             </div>
                                             <div class="mb-3">
                                                 <div class="row align-items-center">
-                                                    <div class="col-3 text-end">
-                                                        <label for="name" class="form-label">Jenis Kelamin  <span class="required">*</span></label>
+                                                    <div class="col-4 text-end">
+                                                        <label for="name" class="form-label">Jenis Kelamin <span
+                                                                class="required">*</span></label>
                                                     </div>
-                                                    <div class="col-9">
+                                                    <div class="col-8">
                                                         <select name="gender" id="gender" class="form-select">
                                                             <option value="" selected disabled>Pilih</option>
                                                             <option value="laki-laki">Laki-laki</option>
@@ -599,21 +752,21 @@
                                             </div>
                                             <div class="mb-3">
                                                 <div class="row align-items-center">
-                                                    <div class="col-3 text-end">
+                                                    <div class="col-4 text-end">
                                                         <label for="hobby" class="form-label">Hobby</label>
                                                     </div>
-                                                    <div class="col-9">
-                                                        <input type="text" class="form-control" name="hobby"
-                                                            id="hobby" placeholder="">
+                                                    <div class="col-8">
+                                                        <input type="text" class="form-control" name="hobby" id="hobby"
+                                                            placeholder="">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="mb-3">
                                                 <div class="row align-items-center">
-                                                    <div class="col-3 text-end">
+                                                    <div class="col-4 text-end">
                                                         <label for="name" class="form-label">Status Menikah</label>
                                                     </div>
-                                                    <div class="col-9">
+                                                    <div class="col-8">
                                                         <select name="status" id="status" class="form-select">
                                                             <option value="" selected disabled>Pilih</option>
                                                             <option value="belum-menikah">Belum Menikah</option>
@@ -624,10 +777,10 @@
                                             </div>
                                             <div class="mb-3">
                                                 <div class="row align-items-center">
-                                                    <div class="col-3 text-end">
+                                                    <div class="col-4 text-end">
                                                         <label for="facebook" class="form-label">ID Facebook</label>
                                                     </div>
-                                                    <div class="col-9">
+                                                    <div class="col-8">
                                                         <input type="text" class="form-control" name="facebook"
                                                             id="facebook" placeholder="">
                                                     </div>
@@ -635,10 +788,10 @@
                                             </div>
                                             <div class="mb-3">
                                                 <div class="row align-items-center">
-                                                    <div class="col-3 text-end">
+                                                    <div class="col-4 text-end">
                                                         <label for="instagram" class="form-label">ID Instagram</label>
                                                     </div>
-                                                    <div class="col-9">
+                                                    <div class="col-8">
                                                         <input type="text" class="form-control" name="instagram"
                                                             id="instagram" placeholder="">
                                                     </div>
@@ -646,10 +799,10 @@
                                             </div>
                                             <div class="mb-3">
                                                 <div class="row align-items-center">
-                                                    <div class="col-3 text-end">
+                                                    <div class="col-4 text-end">
                                                         <label for="twitter" class="form-label">ID Twitter</label>
                                                     </div>
-                                                    <div class="col-9">
+                                                    <div class="col-8">
                                                         <input type="text" class="form-control" name="twitter"
                                                             id="twitter" placeholder="">
                                                     </div>
@@ -657,31 +810,146 @@
                                             </div>
                                         </div>
                                         <div class="col-12 col-lg-6">
-                                            <div class="row">
-                                                <div class="col-5 mb-3">
-                                                    <label for="anak" class="form-label">Anak Ke-</label>
-                                                    <input type="text" class="form-control" name="anak" id="anak"
-                                                        placeholder="">
-                                                </div>
-                                                <div class="col-7 mb-3">
-                                                    <label for="bersaudara" class="form-label">Dari Berapa
-                                                        Bersaudara</label>
-                                                    <input type="text" class="form-control" name="bersaudara"
-                                                        id="bersaudara" placeholder="">
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-12 mb-3">
-                                                    <label for="address" class="form-label">Tempat Ijazah</label>
-                                                    <input type="text" class="form-control" name="address" id="address"
-                                                        placeholder="">
+                                            <div class="mb-3">
+                                                <div class="row align-items-center">
+                                                    <div class="col-4 text-end">
+                                                        <label for="nik" class="form-label">No. Handphone 1 <span
+                                                                class="required">*</span></label>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <input type="text" class="form-control" name="nik" id="nik"
+                                                            placeholder="">
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-12 mb-3">
-                                                    <label for="province" class="form-label">Provinsi</label>
-                                                    <textarea class="form-control" name="address" id="address" cols="10"
-                                                        rows="3"></textarea>
+                                            <div class="mb-3">
+                                                <div class="row align-items-center">
+                                                    <div class="col-4 text-end">
+                                                        <label for="name" class="form-label">No. Handphone
+                                                            2</label>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <input type="text" class="form-control" name="name" id="name"
+                                                            placeholder="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="row align-items-center">
+                                                    <div class="col-4 text-end">
+                                                        <label for="nama-ijazah" class="form-label">Golongan
+                                                            Darah</label>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <input type="text" class="form-control" name="nama-ijazah"
+                                                            id="nama-ijazah" placeholder="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="row align-items-center">
+                                                    <div class="col-4 text-end">
+                                                        <label for="gelar" class="form-label">Ayah</label>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <input type="text" class="form-control" name="gelar" id="gelar"
+                                                            placeholder="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="row align-items-center">
+                                                    <div class="col-4 text-end">
+                                                        <label for="name-ktp" class="form-label">Ibu</label>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <input type="text" class="form-control" name="name-ktp"
+                                                            id="name-ktp" placeholder="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="row align-items-center">
+                                                    <div class="col-4 text-end">
+                                                        <label for="address" class="form-label">Alamat (Jalan -
+                                                            Kampung - Nomor Rumah)<span class="required">*</span></label>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <textarea type="text" class="form-control" name="address"
+                                                            id="address" placeholder=""></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-4 text-end">
+                                                                <label for="rt" class="form-label">RT<span
+                                                                        class="required">*</span></label>
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <input type="text" class="form-control" name="rt"
+                                                                    id="rt" placeholder="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-4 text-end">
+                                                                <label for="rw" class="form-label">RW<span
+                                                                        class="required">*</span></label>
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <input type="text" class="form-control" name="rw"
+                                                                    id="rw" placeholder="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="row align-items-center">
+                                                    <div class="col-4 text-end">
+                                                        <label for="provinsi" class="form-label">Provinsi<span class="required">*</span></label>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <input type="text" class="form-control" name="provinsi" id="provinsi"
+                                                        placeholder="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="row align-items-center">
+                                                    <div class="col-4 text-end">
+                                                        <label for="kota" class="form-label">Kota<span class="required">*</span></label>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <input type="text" class="form-control" name="kota" id="kota"
+                                                            placeholder="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="row align-items-center">
+                                                    <div class="col-4 text-end">
+                                                        <label for="kecamatan" class="form-label">Kecamatan<span class="required">*</span></label>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <input type="text" class="form-control" name="kecamatan" id="kecamatan"
+                                                            placeholder="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="row align-items-center">
+                                                    <div class="col-4 text-end">
+                                                        <label for="kelurahan" class="form-label">Desa / Kelurahan<span class="required">*</span></label>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <input type="text" class="form-control" name="kelurahan"
+                                                            id="kelurahan" placeholder="">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

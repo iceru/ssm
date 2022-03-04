@@ -3,7 +3,9 @@
     .header {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin-bottom: 3rem;
+        flex-wrap: wrap;
 
         .search-bar {
             position: relative;
@@ -43,6 +45,26 @@
                 white-space: nowrap;
             }
         }
+
+        .mobile-sidebar {
+            display: none;
+        }
+
+        @include breakpoint(untilTablet) {
+            .mobile-sidebar {
+                display: block;
+                margin-bottom: 1rem;
+            }
+
+            .user {
+                margin-bottom: 1rem;
+            }
+
+            .search-bar {
+                width: 100%;
+                order: 3;
+            }
+        }
     }
 
     .breadcrumb {
@@ -73,6 +95,21 @@
             font-size: 11px;
         }
     }
+
+    .table-options {
+        margin: .5rem 0;
+        .show-table {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+
+            .form-control {
+                font-size: 11px;
+                margin: 0 .5rem;
+                max-width: 60px;
+            }
+        }
+    }
     
     .table {
         font-size: 12px;
@@ -81,6 +118,7 @@
         overflow: hidden;
         border-radius: 3px;
         margin-bottom: .5rem;
+        vertical-align: middle;
     
         thead {
             background-color: $green-2;
@@ -147,6 +185,7 @@
                     background-color: transparent;
                     color: #567C38;
                     font-weight: bold;
+                    border: none;
                 }
             }
         }
@@ -174,6 +213,20 @@
                         border: none;
                     }
                 }
+            }
+        }
+
+        @include breakpoint(untilTablet) {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 6px 1rem;
+
+            .pagination-number {
+                margin-bottom: .5rem;
+            }
+
+            > div:first-child {
+                display: none;
             }
         }
     }
@@ -216,6 +269,96 @@
 
     .card-body {
         font-size: 11px;
+    }
+
+    @include breakpoint(untilTablet) {
+        .col-12 {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.history {
+    font-family: 'Roboto';
+
+    .history-desc {
+        position: relative;
+        border-right: 1px solid grey;
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            top: .8rem;
+            right: -.4rem;
+            background-color: #9FE26C;
+            border: 3px solid #749A57;
+        }
+
+        .history-date, .history-time {
+            text-align: end;
+        }
+
+        @include breakpoint(untilTablet) {
+            .history-date, .history-time {
+                text-align: start;
+            }
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+            border-right: 0;
+            border-bottom: 1px solid lightgray;
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    .history-table {
+        thead {
+            background-color: #D7AA38;
+            tr {
+                th {
+                    border: 1px solid white;
+
+                    &:first-child {
+                        border-left: 0;
+                    }
+
+                    &:last-child {
+                        border-right: 0;
+                    }
+                }
+            }
+            .up {
+                background-color: #8E7840;
+            }
+        }
+
+        .table-wrapper {
+            margin-bottom: 1rem;
+        }
+
+        tbody {
+            background-color: #8E7840;
+            color: white;
+
+            .text-start {
+                border-right: 1px solid white;
+            }
+
+            tr:last-child {
+                border-top: 1px solid white;
+            }
+        }
+
+        @include breakpoint (untilTablet) {
+            margin-bottom: 1.5rem;
+        }
     }
 }
 
