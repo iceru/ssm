@@ -747,7 +747,7 @@
   -webkit-box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.1);
   padding: 4rem 2rem;
-  width: 40%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -758,6 +758,27 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 60em) {
+  .login .content .item-wrapper {
+    width: 100%;
+  }
+  .login .content .item-wrapper .logo {
+    width: 100%;
+  }
+  .login .content .item-wrapper .logo .top {
+    font-size: 1.25rem;
+  }
+  .login .content .item-wrapper .logo .middle {
+    font-size: 1.75rem;
+  }
+  .login .content .item-wrapper form {
+    width: 100%;
+  }
+  .login .content .item-wrapper form .form-label, .login .content .item-wrapper form .btn {
+    font-size: 1rem;
+  }
 }
 
 .login .content .logo {
