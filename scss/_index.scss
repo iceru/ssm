@@ -1,0 +1,221 @@
+.navigation {
+    margin-bottom: 1.5rem;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+
+        .search-bar {
+            position: relative;
+            width: 40%;
+            .form-control {
+                padding-left: 2.5rem;
+                border-radius: 30px;
+                width: 100%;
+                border-color: transparent;
+            }
+            .icon {
+                position: absolute;
+                left: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
+                margin-top: -2px;
+            }
+        }
+
+        .dropdown-toggle:after {
+            margin-left: 1rem;
+        }
+
+        .user {
+            color: #676767;
+            display: flex;
+            align-items: center;
+            
+            img {
+                margin-right: .75rem;
+                height: 35px;
+                width: 35px;
+                object-fit: cover;
+            }
+
+            .name {
+                white-space: nowrap;
+            }
+        }
+    }
+
+    .breadcrumb {
+        color: #939393;
+
+        span.current {
+            color: $green-4;
+        }
+    }
+}
+
+.table-wrapper {
+    margin-bottom: 4rem;
+    .table-header {
+        background-color: $green-1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: white;
+        border-radius: 3px;
+        margin-bottom: .5rem;
+    
+        .form-select {
+            font-family: 'Lato', sans-serif;
+            font-size: 11px;
+        }
+    }
+    
+    .table {
+        font-size: 12px;
+        text-align: center;
+        background-color: white;
+        overflow: hidden;
+        border-radius: 3px;
+        margin-bottom: .5rem;
+    
+        thead {
+            background-color: $green-2;
+            color: white;
+
+            &.bordered {
+                th {
+                    border-left: 1px solid white;
+                    border-right: 1px solid white;
+        
+                    &:last-child {
+                        border-right: none;
+                    }
+        
+                    &:first-child {
+                        border-left: none;
+                    }
+                }
+            }
+        }
+    
+        tr.summary {
+            background-color: $green-3;
+            font-weight: bold;
+            
+            td {
+                border-left: 1px solid white;
+                border-right: 1px solid white;
+    
+                &:last-child {
+                    border-right: none;
+                }
+    
+                &:first-child {
+                    border-left: none;
+                }
+            }
+        }
+
+        tr.empty {
+            background-color: #F9ECD3;
+            color: #815934;
+        }
+    }
+
+    .pagination-wrapper { 
+        background-color: #D3E2C8;
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 40px;
+        border-radius: 0 0 3px 3px;
+
+        .pagination {
+            margin-bottom: 0;
+
+            .page-item {
+                &.disabled {
+                    .page-link {
+                        color: #464646;
+                    }
+                }
+
+                .page-link {
+                    background-color: transparent;
+                    color: #567C38;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .pagination-number {
+            .page-item {
+                .page-link {
+                    color: #464646;
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 50%;
+                    justify-content: center;
+                    margin: 0 .1rem;
+
+                    &:focus {
+                        box-shadow: 0 0 0 0.25rem rgba($color: $green-2, $alpha: .2)
+                    }
+                }
+
+                &.active {
+                    .page-link {
+                        background-color: white;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.card {
+    .card-header {
+        background-color: $green-2;
+        color: white;
+        font-weight: bold;
+        padding: 6px 22px;
+        font-size: 15px;
+    }
+    .card-body {
+        padding: 20px 22px;
+        font-size: 12px;
+
+        .grey-text {
+            color: #676767;
+        }
+        p {
+            min-height: 16px;
+            margin-bottom: .75rem;
+        }
+    }
+
+    &.secondary {
+        .card-header {
+            background-color: $orange;
+        }
+    }
+}
+
+.pendaftaran {
+    margin-bottom: 4rem;
+
+    .card-header {
+        font-size: 12px;
+    }
+
+    .card-body {
+        font-size: 11px;
+    }
+}
+

@@ -1,0 +1,33 @@
+.siswa-baru {
+    .item-header {
+        font-weight: bold;
+        padding: 14px 20px;
+        color: white;
+        background-color: $green-1;
+        text-transform: uppercase;
+        border-radius: 3px;
+        margin-bottom: .75em;
+    }
+    .card {
+        margin-bottom: 1.5rem;
+
+        .card-header {
+            font-weight: 600;
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+        }
+
+        .form-control.highlight, .form-select.highlight {
+            background-color: $orange-2;
+        }
+
+        .form-label {
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .required {
+            color: red;
+        }
+    }
+}

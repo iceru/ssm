@@ -15,20 +15,27 @@
     }
 
     .sidebar-body {
-        ul {
+        > ul {
             list-style-type: none;
             padding: 0 26px 1rem 1rem;
             margin: 0;
 
-            li {
+            > a > li {
                 display: flex;
                 align-items: center;
                 position: relative;
                 padding: .5rem 1rem;
                 border-radius: 3px;
-                margin-bottom: 20px;
+                margin-top: 20px;
                 img {
                     margin-right: .75rem;
+                }
+
+                .icon-collapse {
+                    justify-self: flex-end;
+                    img {
+                        margin: 0;
+                    }
                 }
 
                 &.active {
@@ -45,6 +52,39 @@
                         top: 50%;
                         transform: translateY(-50%);
                         background-color: #75B940;
+                    }
+                }
+            }
+
+            a.collapse-menu {
+                li {
+                    justify-content: space-between;
+                }
+
+                
+            }
+
+            a[aria-expanded="true"] {
+                li {
+                    font-weight: 900;
+                    background: #536F3E0D;
+                }
+                .icon-collapse {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .submenu {
+            ul {
+                list-style-type: none;
+                padding-left: calc(27px + .75rem + 1rem);
+
+                li {
+                    padding: 7px 0;
+
+                    &.active {
+                        font-weight: bold;
                     }
                 }
             }
