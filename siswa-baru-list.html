@@ -463,10 +463,8 @@
                                         <td>1-TMI</td>
                                         <td>P</td>
                                         <td>Bayar Pendaftaran</td>
-                                        <td>
-                                            <div class="registrasi">
-                                                Tidak
-                                            </div>
+                                        <td class="registrasi">
+                                            <input type="text" class="form-control" name="registrasi" value="Tidak">
                                         </td>
                                         <td></td>
                                     </tr>
@@ -510,10 +508,8 @@
                                         <td>1-TMI</td>
                                         <td>L</td>
                                         <td>Bayar Pendaftaran</td>
-                                        <td>
-                                            <div class="registrasi">
-                                                Tidak
-                                            </div>
+                                        <td class="registrasi">
+                                            <input type="text" class="form-control" name="registrasi" value="Tidak">
                                         </td>
                                         <td></td>
                                     </tr>
@@ -749,12 +745,34 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <canvas id="lembaga" width="300" height="150"></canvas>
+                                        <div class="chart-total">
+                                            <b>1,234</b> Total
+                                         </div>
+                                        <div class="chart-desc">
+                                            <div class="chart-data">
+                                                <div class="circle" style="background-color: #16556F; border-color: #75BBC8;"></div>
+                                                <div class="data">
+                                                    70%
+                                                </div>
+                                                <div class="name">
+                                                    Lembaga A
+                                                </div>
+                                            </div>
+                                            <div class="chart-data">
+                                                <div class="circle" style="background-color: #75BBC8; border-color: #C0C0C0;"></div>
+                                                <div class="data">
+                                                    30%
+                                                </div>
+                                                <div class="name">
+                                                    Lembaga B
+                                                </div>
+                                            </div>
+                                        </div>
                                         <script>
                                             const ctxLembaga = document.getElementById('lembaga').getContext('2d');
                                             const chartLembaga = new Chart(ctxLembaga, {
                                                 type: 'doughnut',
                                                 data: {
-                                                    labels: ['Lembaga A', 'Lembaga B'],
                                                     datasets: [
                                                         {
                                                             data: [70, 30],
@@ -775,12 +793,34 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <canvas id="Proses" width="300" height="150"></canvas>
+                                        <div class="chart-total">
+                                           <b>1,234</b> Total
+                                        </div>
+                                        <div class="chart-desc">
+                                            <div class="chart-data">
+                                                <div class="circle" style="background-color: #DE0685; border-color: #DE0685;"></div>
+                                                <div class="data">
+                                                    70%
+                                                </div>
+                                                <div class="name">
+                                                    Proses A
+                                                </div>
+                                            </div>
+                                            <div class="chart-data">
+                                                <div class="circle" style="background-color: #FD8FCF; border-color: #FD8FCF;"></div>
+                                                <div class="data">
+                                                    30%
+                                                </div>
+                                                <div class="name">
+                                                    Proses B
+                                                </div>
+                                            </div>
+                                        </div>
                                         <script>
                                             const ctxProses = document.getElementById('Proses').getContext('2d');
                                             const chartProses = new Chart(ctxProses, {
                                                 type: 'doughnut',
                                                 data: {
-                                                    labels: ['Proses A', 'Proses B'],
                                                     datasets: [
                                                         {
                                                             data: [70, 30],

@@ -20,6 +20,9 @@
     <div class="wrapper">
         <div class="content">
             <div class="item-wrapper">
+                <div class="logo-2 mb-3">
+                    <img src="/images/logo-2.png" alt="">
+                </div>
                 <div class="logo">
                     <div class="top">
                         Salafiyah
@@ -31,6 +34,18 @@
                         <img src="/images/logo.png" alt="">
                     </div>
                 </div>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  <strong>Username / Password Salah</strong> 
+                </div>
+                
+                <script>
+                  var alertList = document.querySelectorAll('.alert');
+                  alertList.forEach(function (alert) {
+                    new bootstrap.Alert(alert)
+                  })
+                </script>
+                
                 <form action="">
                     <div class="mb-3">
                         <div class="row align-items-center">

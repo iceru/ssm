@@ -129,8 +129,58 @@
     }
 
     .registrasi {
-        padding: 3px 1em;
-        border: 1px solid #464646;
-        display: inline;
+        .form-control {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            border: 1px solid #464646;
+            border-radius: 0;
+            font-size: 12px;
+        }
+    }
+
+    .card-body {
+        position: relative;
+
+        canvas {
+            padding: 2rem;
+        }
+    }
+
+    .chart-total {
+        position: absolute;
+        right: 1rem;
+        top: 3rem;
+        font-size: 13px;
+    }
+
+    .chart-desc {
+        display: flex;
+        justify-content: center;
+        margin-left: -22px;
+        margin-right: -22px;
+        border-top: 1px solid #C4C4C4;
+
+        .chart-data {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            padding-bottom: 1rem;
+            font-family: 'Roboto', sans-serif;
+
+            .circle {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                margin-bottom: .5rem;
+                border: 1px solid grey;
+            }
+
+            .data {
+                font-weight: bold;
+            }
+        }
     }
 }

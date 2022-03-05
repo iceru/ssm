@@ -12,15 +12,29 @@
             border-radius: .5rem;
             box-shadow: 0 0 6px 6px rgba($color: #000000, $alpha: 0.1);
             padding: 4rem 2rem;
-            width: 60%;
+            width: 40vw;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
+        .alert {
+            width: 80%;
+            padding: .5rem;
+            margin-bottom: 2rem;
+
+            .btn-close {
+                padding: .75rem .5rem;
+            }
+        }
+
         @include breakpoint(untilTablet) {
             .item-wrapper {
                 width: 100%;
+
+                .alert {
+                    width: 100%;
+                }
 
                 .logo {
                     width: 100%;
@@ -45,14 +59,14 @@
         }
 
         .logo {
-            width: 50%;
+            width: 60%;
             margin-bottom: 2rem;
             .top {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
 
             .middle {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
 
             .bottom {
@@ -65,7 +79,7 @@
         form {
             width: 80%;
             .form-label {
-                font-size: 1.5rem;
+                font-size: 1.25rem;
             }
         }
 
@@ -74,7 +88,7 @@
             text-align: center;
             background-color: $green-1;
             color: white;
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             font-weight: bold;
             text-transform: uppercase;
         }
