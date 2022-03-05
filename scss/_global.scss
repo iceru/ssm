@@ -12,6 +12,12 @@
     min-height: 90vh;
     background-color: white;
 
+    &.hide {
+        transform: translateX(-100%);
+        visibility: hidden;
+        width: 0;
+    }
+
     @include breakpoint(untilTablet) {
         display: none;
     }
@@ -101,6 +107,10 @@
 .content {
     width: calc(100% - 300px);
     padding: 2rem;
+
+    &.expand {
+        width: 100%;
+    }
 
     @include breakpoint(untilTablet) {
         width: 100%;

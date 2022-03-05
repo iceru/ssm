@@ -7,6 +7,15 @@
         margin-bottom: 3rem;
         flex-wrap: wrap;
 
+        .header-left {
+            display: flex;
+            width: 70%;
+
+            .sidebar-collapse {
+                margin-right: 1rem;
+            }
+        }
+
         .search-bar {
             position: relative;
             width: 40%;
@@ -47,13 +56,17 @@
         }
 
         .mobile-sidebar {
-            display: none;
+           display: none;
         }
 
         @include breakpoint(untilTablet) {
             .mobile-sidebar {
                 display: block;
                 margin-bottom: 1rem;
+            }
+
+            .sidebar-collapse {
+                display: none;
             }
 
             .user {

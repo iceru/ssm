@@ -294,10 +294,17 @@
                             <img src="/images/icon-hamburger.png" alt="">
                           </a>
                     </div>
-                    <div class="search-bar">
-                        <input class="form-control" type="text" placeholder="Search..">
-                        <div class="icon">
-                            <img src="/images/icon-search.png" alt="Search">
+                    <div class="header-left">
+                        <div class="sidebar-collapse">
+                            <a class="btn btn-green">
+                                <img src="/images/icon-hamburger.png" alt="">
+                              </a>
+                        </div>
+                        <div class="search-bar">
+                            <input class="form-control" type="text" placeholder="Search..">
+                            <div class="icon">
+                                <img src="/images/icon-search.png" alt="Search">
+                            </div>
                         </div>
                     </div>
                     <div class="dropdown">
@@ -857,6 +864,12 @@
     $('.table-responsive').on('hide.bs.dropdown', function () {
         $('.table-responsive').css("overflow", "auto");
     })
+
+    $('.sidebar-collapse').click(function (e) { 
+        e.preventDefault();
+        $('.sidebar').toggleClass('hide');
+        $('.content').toggleClass('expand');
+    });
 </script>
 
 </html>
